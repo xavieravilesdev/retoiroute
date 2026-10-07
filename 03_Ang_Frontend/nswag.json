@@ -1,0 +1,53 @@
+{
+  "runtime": "Net100",
+  "defaultVariables": null,
+  "documentGenerator": {
+    "fromDocument": {
+      "url": "http://localhost:5000/swagger/v1/swagger.json",
+      "output": null
+    }
+  },
+  "codeGenerators": {
+    "openApiToTypeScriptClient": {
+      "className": "{controller}Client",
+      "moduleName": "",
+      "namespace": "",
+      "typeScriptVersion": 5.0,
+      "template": "Angular",
+      "injectionTokenType": "InjectionToken",
+      "useSingletonProvider": true,
+      "rxJsVersion": 7.8,
+      "useTransformOptionsMethod": false,
+      "useTransformResultMethod": false,
+      "generateClientClasses": true,
+      "generateClientInterfaces": false,
+      "generateOptionalParameters": true,
+      "exportTypes": true,
+      "generateConstructorInterface": true,
+      "convertConstructorInterfaceData": false,
+      "importRequiredTypes": true,
+      "wrapResponses": false,
+      "generateResponseClasses": true,
+      "responseClass": "SwaggerResponse",
+      "protectedMethods": [],
+      "configurationClass": null,
+      "useOwnerContext": false,
+      "queryNullValue": "",
+      "generateDtoTypes": true,
+      "operationGenerationMode": "MultipleClientsFromFirstTagAndOperationId",
+      "markOptionalProperties": true,
+      "generateCloneMethod": false,
+      "typeStyle": "Class",
+      "enumStyle": "Enum",
+      "useEnumExtensionMethods": false,
+      "generateDefaultValues": true,
+      "excludedTypeNames": [],
+      "handleReferences": false,
+      "generateConstructorInterfaceFromAllowedTypes": false,
+      "serviceBaseClass": null,
+      "dateTimeType": "String",
+      "extensionCode": null,
+      "output": "src/app/shared/api/commerce-client.g.ts"
+    }
+  }
+}

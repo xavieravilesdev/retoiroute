@@ -1,0 +1,20 @@
+<header class="topbar">
+  <a class="brand" routerLink="/">Commerce</a>
+
+  @if (session.isAuthenticated()) {
+    <nav aria-label="Principal">
+      <a routerLink="/upload" routerLinkActive="active">1. Cargar</a>
+      <a routerLink="/process" routerLinkActive="active">2. Procesar</a>
+      <a routerLink="/errors" routerLinkActive="active">3. Errores</a>
+    </nav>
+
+    <div class="user">
+      <span class="muted">{{ session.username() }}</span>
+      <button type="button" class="btn ghost" (click)="logout()">Salir</button>
+    </div>
+  }
+</header>
+
+<main class="container">
+  <router-outlet />
+</main>
